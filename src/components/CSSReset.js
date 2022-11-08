@@ -35,4 +35,17 @@ export const CSSReset = createGlobalStyle`
       opacity: .5;
     }
   }
+  /*Scroll bar*/
+  ::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: #eee;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #121212;
+  border-radius: 10px;
+}
 `;

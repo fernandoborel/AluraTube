@@ -4,7 +4,7 @@
   "github": "fernandoborel",
   "banner": "https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
   "favoritos": {
-    "canais recomendados": [
+    "Canais recomendados": [
       {
         "imgUser": "https://yt3.ggpht.com/m8Yrqf0Y81L4mZ1Cq7rGnJ4NDHe6729rxiFZvWyy9-xd_Z7Osmza7J8NWpN1axMHcCb1oKJNgA=s88-c-k-c0x00ffffff-no-rj",
         "nameUser": "Mario Souto - Dev Soutinho",
@@ -12,7 +12,7 @@
       },
       {
         "imgUser": "https://yt3.ggpht.com/xqhIoXspeX7eqouJvNHl1xqpv9213Pl26ENZbuouXxO2RlDadjsveNXfgnj8GTUk7thFYUkVRg=s88-c-k-c0x00ffffff-no-rj",
-        "nameUser": "Alura Cursos Online",
+        "nameUser": "Alura",
         "urlUser": "https://www.youtube.com/user/aluracursosonline"
       },
       {

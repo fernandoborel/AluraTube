@@ -5,6 +5,12 @@ export const StyledFavorites = styled.div`
   section {
     padding: 16px;
     border-top: 2px solid #9f9f9f;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  section h2{
+    margin: auto;
   }
   div {
     display: flex;
@@ -21,6 +27,7 @@ export const StyledFavorites = styled.div`
     border-radius: 50%;
   }
   section a span {
+    margin-top: 10px;
     width: 88px;
     font-weight: 700;
     font-size: 14px;
