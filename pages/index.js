@@ -49,7 +49,6 @@ const StyledHeader = styled.div`
     border-radius: 50%;
   }
   .user-info {
-    margin-top: 50px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -121,12 +120,12 @@ function Favoritos(props) {
       {canaisFavoritos.map((favorito) => {
         const canal = props.favoritos[favorito];
         return (
-          <section>
+          <section key={favorito}>
             <h2>{favorito}</h2>
             <div>
               {canal.map((fav) => {
                 return (
-                  <a href={fav.urlUser}>
+                  <a key={fav.urlUser} href={fav.urlUser}>
                     <img src={fav.imgUser} />
                     <span>{fav.nameUser}</span>
                   </a>
