@@ -65,6 +65,7 @@ const StyledBanner = styled.div`
 function Header() {
   return (
     <StyledHeader>
+      <title>AluraTube</title>
       <StyledBanner banner={config.banner}/>
       <section className="user-info">
         <img src={`https://github.com/${config.github}.png`} />
