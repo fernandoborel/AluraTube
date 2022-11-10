@@ -45,7 +45,7 @@ export const CSSReset = createGlobalStyle`
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #121212;
+  background-color: rgb(144, 144, 144);
   border-radius: 10px;
 }
 `;
