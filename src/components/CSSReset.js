@@ -35,9 +35,11 @@ export const CSSReset = createGlobalStyle`
       opacity: .5;
     }
   }
+
   /*Scroll bar*/
   ::-webkit-scrollbar {
-  width: 12px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
   background-color: #eee;
