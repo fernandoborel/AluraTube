@@ -4,9 +4,11 @@ export const StyledFavorites = styled.div`
   padding: 16px;
   section {
     padding: 16px;
+    padding-bottom: 0px;
   }
   section h2{
     margin: auto;
+    font-size: 16px;
   }
   div {
     display: flex;

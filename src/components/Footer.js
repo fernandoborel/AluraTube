@@ -5,6 +5,9 @@ export const StyledFooter = styled.div`
   section {
     padding: 16px;
   }
+  section h2{
+    font-size: 16px;
+  }
   img {
     padding: 10px;
     width: 80px;
