@@ -4,7 +4,6 @@ export const StyledFavorites = styled.div`
   padding: 16px;
   section {
     padding: 16px;
-    border-top: 2px solid #9f9f9f;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -27,6 +26,7 @@ export const StyledFavorites = styled.div`
     border-radius: 50%;
   }
   section a span {
+    color: ${({theme}) => theme.textColorBase};
     margin-top: 10px;
     width: 88px;
     font-weight: 700;
