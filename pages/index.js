@@ -1,10 +1,10 @@
 import React from "react";
 import config from "../config.json";
 import styled, { ThemeConsumer } from "styled-components";
-
 import Menu from "../src/components/Menu/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
 import { StyledFavorites } from "../src/components/Favoritos";
+import { StyledFooter } from "../src/components/Footer";
 
 function HomePage() {
   const [valorDoFiltro, setValorDoFiltro] = React.useState("");
@@ -25,6 +25,7 @@ function HomePage() {
         <Header />
         <Timeline searchValue={valorDoFiltro} playlists={config.playlists} />
         <Favoritos favoritos={config.favoritos} />
+        <Footer redesocial={config.redesocial} />
       </div>
     </>
   );
@@ -134,5 +135,31 @@ function Favoritos(props) {
         );
       })}
     </StyledFavorites>
+  );
+}
+
+function Footer(props) {
+  const contatoFooter = Object.keys(props.redesocial);
+
+  return (
+    <StyledFooter>
+      {contatoFooter.map((contatos) => {
+        const contato = props.redesocial[contatos];
+        return (
+          <section key={contatos}>
+            <h2>{contatos}</h2>
+            <div>
+              {contato.map((ctt) => {
+                return (
+                  <a key={ctt.contactUser} href={ctt.contactUser} target="_blank">
+                    <img src={ctt.contactImg} />
+                  </a>
+                );
+              })}
+            </div>
+          </section>
+        );
+      })}
+    </StyledFooter>
   );
 }

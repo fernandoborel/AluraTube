@@ -4,9 +4,6 @@ export const StyledFavorites = styled.div`
   padding: 16px;
   section {
     padding: 16px;
-    display: grid;
-    align-items: center;
-    justify-content: center;
   }
   section h2{
     margin: auto;
