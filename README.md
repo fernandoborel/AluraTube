@@ -9,6 +9,8 @@ Esse projeto tem como objetivo o aprendizado do framework Nextjs e a lib React.J
 
 
 ## Como testar localmente
+Antes de começarmos, é necessário ter o Node instalado em sua máquina.
+
 Primeiro passo => git clone https://github.com/fernandoborel/AluraTube
 (Faz o clone do repositório localmente)
 
