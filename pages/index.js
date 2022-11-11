@@ -18,7 +18,10 @@ function HomePage() {
           flex: 1,
         }}
       >
-        <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
+        <Menu
+          valorDoFiltro={valorDoFiltro}
+          setValorDoFiltro={setValorDoFiltro}
+        />
         <Header />
         <Timeline searchValue={valorDoFiltro} playlists={config.playlists} />
         <Favoritos favoritos={config.favoritos} />
@@ -56,13 +59,13 @@ const StyledHeader = styled.div`
 const StyledBanner = styled.div`
   background-image: url(${config.banner});
   height: 15rem;
-`
+`;
 
 function Header() {
   return (
     <StyledHeader>
       <title>AluraTube</title>
-      <StyledBanner banner={config.banner}/>
+      <StyledBanner banner={config.banner} />
       <section className="user-info">
         <img src={`https://github.com/${config.github}.png`} />
         <div>
@@ -87,19 +90,19 @@ function Timeline({ searchValue, ...props }) {
             <h2>{playlistName}</h2>
             <div>
               {videos
-              .filter((video)=>{
-                const titleNormalized = video.title.toLowerCase();
-                const searchValueNormalized = searchValue.toLowerCase();
-                return titleNormalized.includes(searchValueNormalized);
-              })
-              .map((video) => {
-                return (
-                  <a key={video.url} href={video.url}>
-                    <img src={video.thumb} />
-                    <span>{video.title}</span>
-                  </a>
-                );
-              })}
+                .filter((video) => {
+                  const titleNormalized = video.title.toLowerCase();
+                  const searchValueNormalized = searchValue.toLowerCase();
+                  return titleNormalized.includes(searchValueNormalized);
+                })
+                .map((video) => {
+                  return (
+                    <a key={video.url} href={video.url}>
+                      <img src={video.thumb} />
+                      <span>{video.title}</span>
+                    </a>
+                  );
+                })}
             </div>
           </section>
         );
