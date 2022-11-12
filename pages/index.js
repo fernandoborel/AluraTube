@@ -151,7 +151,11 @@ function Footer(props) {
             <div>
               {contato.map((ctt) => {
                 return (
-                  <a key={ctt.contactUser} href={ctt.contactUser} target="_blank">
+                  <a
+                    key={ctt.contactUser}
+                    href={ctt.contactUser}
+                    target="_blank"
+                  >
                     <img src={ctt.contactImg} />
                   </a>
                 );
