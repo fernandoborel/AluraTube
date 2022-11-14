@@ -5,9 +5,25 @@ import Menu from "../src/components/Menu/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
 import { StyledFavorites } from "../src/components/Favoritos";
 import { StyledFooter } from "../src/components/Footer";
+import { videoService } from "../src/services/videoService";
 
 function HomePage() {
   const [valorDoFiltro, setValorDoFiltro] = React.useState("");
+  const [playlists, setPlaylists] = React.useState({});
+  const service = videoService();
+
+  React.useEffect(() => {
+    service.getAllVideos().then((dados) => {
+      const novasPlaylists = { ...playlists };
+      dados.data.forEach((video) => {
+        if (!novasPlaylists[video.playlist]) {
+          novasPlaylists[video.playlist] = [];
+        }
+        novasPlaylists[video.playlist]?.push(video);
+      });
+      setPlaylists(novasPlaylists);
+    });
+  }, []);
 
   return (
     <>
