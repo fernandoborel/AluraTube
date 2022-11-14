@@ -159,22 +159,14 @@ function Footer(props) {
 
   return (
     <StyledFooter>
-      {contatoFooter.map((contatos) => {
-        const contato = props.redesocial[contatos];
+      {contatoFooter.map((desc) => {
+        const msg = props.redesocial[desc];
         return (
-          <section key={contatos}>
-            <h2>{contatos}</h2>
+          <section key={desc}>
+            <h2>{desc}</h2>
             <div>
-              {contato.map((ctt) => {
-                return (
-                  <a
-                    key={ctt.contactUser}
-                    href={ctt.contactUser}
-                    target="_blank"
-                  >
-                    <img src={ctt.contactImg} />
-                  </a>
-                );
+              {msg.map((cp) => {
+                return <span key={cp.description}>{cp.description}</span>;
               })}
             </div>
           </section>

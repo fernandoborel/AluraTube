@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledSearch = styled.div`
+  border-radius: 20px;
   display: flex;
   flex-direction: row;
   border: 1px solid ${({ theme }) => theme.borderBase};
@@ -50,7 +51,8 @@ export default function Search({ valorDoFiltro, setValorDoFiltro }) {
         onChange={(e) => {
           setValorDaBusca(e.target.value);
         }}
-      value={valorDaBusca} />
+        value={valorDaBusca}
+      />
       <button>🔎</button>
     </StyledSearch>
   );
