@@ -4,7 +4,8 @@ Esse projeto tem como objetivo o aprendizado do framework Nextjs e a lib React.J
 
 ## Preview
 
-![FireShot Capture 003 - AluraTube - alura-tube-zeta vercel app](https://user-images.githubusercontent.com/87503905/201442755-371c9e3a-8ef7-4ace-b6c3-f5b3ad277e3a.png)
+![FireShot Capture 004 - AluraTube - localhost](https://user-images.githubusercontent.com/87503905/202035076-05d049fc-ce16-48f1-9e88-d00376089b2b.png)
+
 
 
 
