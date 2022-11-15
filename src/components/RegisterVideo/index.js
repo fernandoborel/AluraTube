@@ -41,7 +41,11 @@ export default function RegisterVideo() {
 
   return (
     <StyledRegisterVideo>
-      <button className="add-video" onClick={() => setFormVisivel(true)}>
+      <button
+        className="add-video"
+        title="adicionar video"
+        onClick={() => setFormVisivel(true)}
+      >
         +
       </button>
       {formVisivel ? (
@@ -71,6 +75,7 @@ export default function RegisterVideo() {
           <div>
             <button
               type="button"
+              title="fechar"
               className="close-modal"
               onClick={() => setFormVisivel(false)}
             >
